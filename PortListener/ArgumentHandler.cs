@@ -40,14 +40,18 @@ namespace PortListener
 		{
 			var portHandleParams = new PortHandleParameters();
 
-			foreach (string arg in args)
+			for (int i = 0; i < args.Count(); i++)
 			{
 				foreach (string argin in arginList)
 				{
-					if (arg == argin)
+					if (args[i] == argin)
+					{
+					}
+					else
 					{
 
 					}
+
 				}
 			}
 			return portHandleParams;
